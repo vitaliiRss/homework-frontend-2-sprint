@@ -9,7 +9,6 @@
   width: 100%;
   overflow: hidden;
   padding: 12px 24px;
-  font-family: Montserrat, sans-serif;
   font-size: 14px;
   background-color: #f5f7fb;
   border: none;
@@ -20,7 +19,6 @@
 
 .button {
   padding: 10px 40px;
-  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 18px;

@@ -43,7 +43,6 @@
 
 .name {
   margin-bottom: 5px;
-  font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
@@ -51,7 +50,6 @@
 }
 
 .messageText {
-  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -61,7 +59,6 @@
 
 .time {
   width: 48px;
-  font-family: Montserrat, sans-serif;
   font-size: 10px;
   font-weight: 600;
   color: #000;
