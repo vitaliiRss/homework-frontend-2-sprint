@@ -1,25 +1,68 @@
 .sidebar {
+  width: 318px;
+  height: 100vh;
+  display: none;
+  position: absolute;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px 16px 70px;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 10px 40px 0 rgba(29, 33, 38, 0.13);
+  transition: all 0.7s;
+  z-index: 1;
 }
 
 .sidebar.open {
+  left: 20px;
+  visibility: visible;
 }
 
 .background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: 0.3;
 }
 
 .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-top: 24px;
 }
 
 .nav a {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #000;
+  text-decoration: none;
 }
 
 .nav a:hover {
+  color: #58acff;
+}
+
+.nav a:active {
+  color: #3d6b99;
 }
 
 .nav a.active {
-}
-.close {
+  color: #0059b2;
+  text-decoration: underline;
 }
 
-.close img {
+.close {
+  width: 24px;
+  height: 24px;
+  align-self: end;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
+
+.close img {}
