@@ -4,11 +4,14 @@
   font-weight: 600;
   line-height: 20px;
   color: #fff;
-  text-transform: capitalize;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   transition: .3s;
+}
+
+.button:first-letter {
+  text-transform: capitalize;
 }
 
 .secondary {

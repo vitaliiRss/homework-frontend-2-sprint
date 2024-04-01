@@ -1,11 +1,22 @@
 .spanBlock {
+  display: flex;
+  align-items: center;
 }
 
 .span {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0080FF;
+}
+
+span:first-letter {
+  text-transform: capitalize;
 }
 
 .input {
+  width: 276px;
 }
 
-.pen {
-}
+.pen {}
