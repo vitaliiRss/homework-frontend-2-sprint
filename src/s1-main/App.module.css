@@ -9,12 +9,13 @@
 
 .hw {
   padding: 24px 0 30px;
+  margin-bottom: 40px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .hwTitle {
-  padding: 40px 0 10px;
+  padding-bottom: 10px;
   font-size: 22px;
   font-weight: 600;
   line-height: 27px;

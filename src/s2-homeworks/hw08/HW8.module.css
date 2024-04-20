@@ -1,23 +1,56 @@
-.item {
-}
-
-.item:last-of-type {
-}
-
-.users {
+.container {
+  width: 606px;
 }
 
 .buttonsContainer {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
-.container {
+.users {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.thead {
-}
-
-.nameCol {
-}
-
+.nameCol,
 .ageCol {
+  width: 50%;
+  font-size: 14px;
+}
+
+.thead .nameCol,
+.thead .ageCol {
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-weight: 600;
+  background: #e5e5e5;
+}
+
+.thead .nameCol {
+  padding-left: 17px;
+}
+
+.item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item:last-of-type {
+  border: none
+}
+
+.item .nameCol,
+.item .ageCol {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.item .nameCol {
+  padding-left: 17px;
+  font-weight: 300;
+}
+
+.item .ageCol {
+  font-weight: 500;
 }
