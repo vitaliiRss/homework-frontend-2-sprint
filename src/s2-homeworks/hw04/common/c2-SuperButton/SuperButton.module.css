@@ -30,8 +30,7 @@
 
 .disabled,
 .button:disabled {
-  color: #002e5c;
-  background: #004d99;
+  background: #0066CC;
   pointer-events: none;
   cursor: default;
   opacity: 0.5;
