@@ -3,22 +3,13 @@
   height: 90px;
   position: relative;
   border-radius: 90px;
-  background: conic-gradient(from 90deg at 25% 50%,
-      rgba(255, 255, 255, 0) 20deg,
-      #512dE4 360deg);
+  background: conic-gradient(from 90deg at 25% 50%, rgba(255, 255, 255, 0) 20deg, #512de4 360deg);
   animation: 1s rotate infinite linear;
-}
-
-.loader::before {
-  content: "";
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 70px;
-  background: #fff;
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 10px - 0.5px),
+    #000 calc(100% - 10px + 0.5px)
+  );
 }
 
 .loader::after {
@@ -30,7 +21,7 @@
   top: 50%;
   transform: translateY(-50%);
   border-radius: 10px;
-  background: #512dE4;
+  background: #512de4;
 }
 
 @keyframes rotate {

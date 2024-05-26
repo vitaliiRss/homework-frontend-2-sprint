@@ -7,7 +7,7 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .button:first-letter {
@@ -25,12 +25,10 @@
 }
 
 .red {
-  background: #cc1439
+  background: #cc1439;
 }
 
-.disabled,
-.button:disabled {
-  background: #0066CC;
+button[disabled] {
   pointer-events: none;
   cursor: default;
   opacity: 0.5;
