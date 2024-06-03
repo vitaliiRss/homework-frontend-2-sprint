@@ -3,7 +3,7 @@
 }
 
 .radio::before {
-  content: '';
+  content: "";
   width: 16px;
   height: 16px;
   position: absolute;
@@ -11,12 +11,11 @@
   left: 0;
   transform: translateY(-50%);
   border-radius: 50%;
-  background-color: white;
   border: 2px solid black;
 }
 
 .radio:checked::after {
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   position: absolute;
@@ -27,6 +26,16 @@
 
   border-radius: 50%;
   background-color: black;
+}
+
+[data-theme="3"] {
+  .radio::before {
+    border: 2px solid white;
+  }
+
+  .radio:checked::after {
+    background-color: white;
+  }
 }
 
 .label {
