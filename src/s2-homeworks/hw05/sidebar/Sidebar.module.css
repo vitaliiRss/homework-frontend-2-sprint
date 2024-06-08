@@ -2,7 +2,7 @@
   width: 318px;
   height: 100vh;
   display: none;
-  position: absolute;
+  position: fixed;
   left: -100%;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,8 @@
 }
 
 .sidebar.open {
-  left: 20px;
+  top: 0;
+  left: 0;
   visibility: visible;
 }
 

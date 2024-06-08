@@ -1,5 +1,6 @@
 import React, {FC} from 'react'
 import burgerIcon from './burger.svg'
+import s2 from '../../../s1-main/App.module.css'
 import s from './Header.module.css'
 import {useLocation} from 'react-router-dom'
 import {PATH} from '../Pages'
@@ -22,8 +23,8 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
                     ? 'Junior Plus'
                     : 'Error'
     return (
-        <>
-            <div id={'hw5-header'} className={s.header}>
+        <header className={s.header}>
+            <div id={'hw5-header'} className={`${s2.container} ${s.headerInner}`}>
                 <img
                     src={burgerIcon}
                     id={'hw5-burger-menu'}
@@ -33,6 +34,6 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
                 />
                 <h1>{pageName}</h1>
             </div>
-        </>
+        </header>
     )
 }

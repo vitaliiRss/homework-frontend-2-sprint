@@ -1,5 +1,5 @@
-import React from 'react'
-import { Slider, SliderProps } from '@mui/material'
+import React from "react"
+import { Slider, SliderProps } from "@mui/material"
 
 const SuperRange: React.FC<SliderProps> = (props) => {
   return (
@@ -21,10 +21,10 @@ const SuperRange: React.FC<SliderProps> = (props) => {
           color: "#0C2",
           border: "5px solid #fff",
           boxShadow: "0 0 0 1px #0C2",
-          '&.Mui-focusVisible, &:hover': {
+          "&.Mui-focusVisible, &:hover": {
             boxShadow: "0 0 0 8px rgba(0, 204, 34, 0.26)"
           },
-          '&.Mui-active': {
+          "&.Mui-active": {
             boxShadow: "0 0 0 14px rgba(0, 204, 34, 0.26)"
           },
         },

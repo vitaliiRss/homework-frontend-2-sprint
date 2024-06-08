@@ -1,10 +1,13 @@
 .App {
   --header_height: 60px;
-  width: 1280px;
   position: relative;
-  margin: 0 auto;
-  padding: 0 20px;
   font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .hw {

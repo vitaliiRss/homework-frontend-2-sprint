@@ -1,4 +1,5 @@
 import React, { FC, ReactNode, useEffect, useState } from 'react'
+import s2 from '../../../s1-main/App.module.css'
 import { Header } from '../header/Header'
 import { Sidebar } from '../sidebar/Sidebar'
 
@@ -18,9 +19,9 @@ export const Layout: FC<PropsType> = ({ children }) => {
 
     return (
         <>
-            <Sidebar open={open} handleClose={handleClose} />
             <Header handleOpen={handleOpen} />
-            <div>
+            <Sidebar open={open} handleClose={handleClose} />
+            <div className={s2.container}>
                 {/*страницы*/}
                 {children}
             </div>
