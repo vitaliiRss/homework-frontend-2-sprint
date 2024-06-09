@@ -1,13 +1,20 @@
 import React from "react"
 import s from './SuperSort.module.css'
-import arrowDown from "../../../../assets/arrow-down.svg"
-import arrowUp from "../../../../assets/arrow-up.svg"
-import arrowUpDown from "../../../../assets/arrow-up-down.svg"
 
 // добавить в проект иконки и импортировать
-const downIcon = arrowDown
-const upIcon = arrowUp
-const noneIcon = arrowUpDown
+const downIcon = 
+  <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="Polygon 5" d="M4 5L0.535898 0.5L7.4641 0.5L4 5Z" fill="currentColor"/>
+  </svg>
+const upIcon = 
+  <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="Polygon 2" d="M4 0L7.4641 4.5H0.535898L4 0Z" fill="currentColor"/>
+  </svg>
+const noneIcon = 
+  <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 0L7.4641 4.5H0.535898L4 0Z" fill="currentColor"/>
+    <path d="M4 12L0.535898 7.5L7.4641 7.5L4 12Z" fill="currentColor"/>
+  </svg>
 
 export type SuperSortPropsType = {
     id?: string
@@ -57,7 +64,7 @@ const SuperSort: React.FC<SuperSortPropsType> = (
             className={s.icon}
         >
             {/*сделать иконку*/}
-            <img id={id + "-icon-" + sort} className={s.iconImg} src={icon} alt="sort arrow"/>
+            {icon}
         </span>
       </div>
 

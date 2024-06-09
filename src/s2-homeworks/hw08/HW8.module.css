@@ -25,11 +25,25 @@
   padding-top: 11px;
   padding-bottom: 9px;
   font-weight: 600;
-  color: #000;
   background: #e5e5e5;
 }
 
+[data-theme="2"] {
 
+  .thead .nameCol,
+  .thead .ageCol {
+    color: #fff;
+    background: #0066CC;
+  }
+}
+
+[data-theme="3"] {
+
+  .thead .nameCol,
+  .thead .ageCol {
+    color: #000;
+  }
+}
 
 .thead .nameCol {
   padding-left: 17px;

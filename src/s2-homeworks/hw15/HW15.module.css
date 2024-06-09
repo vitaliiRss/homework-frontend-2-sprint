@@ -48,3 +48,24 @@
   opacity: 0.9;
   z-index: 1;
 }
+
+[data-theme="2"] {
+  .rowHeader {
+    color: #fff;
+    background: #0066CC;
+  }
+
+  .loading {
+    background: #DDEEFF;
+  }
+
+  .row+.row {
+    border-color: #a0a0a0;
+  }
+}
+
+[data-theme="3"] {
+  .loading {
+    background: #212A34;
+  }
+}

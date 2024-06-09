@@ -28,10 +28,12 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
         // пишет студент
         let itemsPerPage = Number(event)
 
+        onChange(page, itemsPerPage)
+
         if(totalCount / itemsPerPage >= page ) {
           onChange(page, itemsPerPage)
         } else {
-          onChange(1, itemsPerPage)
+          onChange(lastPage, itemsPerPage)
         }
     }
 
